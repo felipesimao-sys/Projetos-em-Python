@@ -7,7 +7,7 @@ from Funcao_Quadrados_Minimos import funcao_quadrados_minimos
 from Gerando_grafico import gerar_grafico
 
 # criação da lista de pontos (x, y) a serem ajustados
-x = [0, 2, 4, 5, 8, 10]
+x = [0, 2, 4, 5, 7, 10]
 y = [10, 9, 7, 6, 3, 0]
 
 # leitura do grau do polinômio a ser ajustado
@@ -20,6 +20,6 @@ coeficientes = funcao_quadrados_minimos(x, y, n)
 print("Coeficientes do polinômio ajustado:", coeficientes)
 
 # chama a função para gerar o gráfico do polinômio ajustado e dos pontos originais
-gerar_grafico(x, y, coeficientes)
+gerar_grafico(x, y, coeficientes, n)
 
 print("Fim")
