@@ -7,5 +7,6 @@ init_printing(use_latex='png', scale=1.05, order='grlex',
 x = Symbol('x')
 e = Symbol('e')
 y = Symbol('y')
-f = 2*x**2
-print(diff(f, x))
+f = 2*x**2 + y**3
+#gradiente = [diff(f, x), diff(f, y)]
+print(diff(f, x, y))

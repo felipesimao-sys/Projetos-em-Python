@@ -20,7 +20,7 @@ coeficientes = funcao_quadrados_minimos(x, y, n)
 print("Coeficientes do polinômio ajustado:", coeficientes)  
 
 #chama a função para gerar o gráfico do polinômio ajustado e dos pontos originais
-gerar_grafico(x, y, coeficientes)   
+#gerar_grafico(x, y, coeficientes)   
 
 print("Fim")
 
