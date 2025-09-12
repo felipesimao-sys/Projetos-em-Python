@@ -10,3 +10,5 @@ y = Symbol('y')
 f = 2*x**2 + y**3
 #gradiente = [diff(f, x), diff(f, y)]
 print(diff(f, x, y))
+
+
