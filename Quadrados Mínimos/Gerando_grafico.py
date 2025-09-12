@@ -12,7 +12,7 @@ def gerar_grafico(x, y, coeficientes):
     y_grafico = sum(c * x_grafico**i for i, c in enumerate(coeficientes))
     
     # Cria o gráfico
-    plt.plot(x_grafico, y_grafico, label='Polinômio Ajustado', color='blue')
+    plt.plot(y_grafico, x_grafico, label='Polinômio Ajustado', color='blue')
     plt.scatter(x, y, color='red', label='Pontos Originais')
     
     # Adiciona título e rótulos aos eixos

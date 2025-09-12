@@ -7,8 +7,8 @@ from Funcao_Quadrados_Minimos import funcao_quadrados_minimos
 from Gerando_grafico import gerar_grafico
 
 #criação da lista de pontos (x, y) a serem ajustados
-x = [1, 2, 3, 4, 5]
-y = [2.2, 2.8, 3.6, 4.5, 5.1]
+x = [0, 2, 4, 5, 8, 10]
+y = [10, 9, 7, 6, 3, 0.1]
 
 #leitura do grau do polinômio a ser ajustado
 n = int(input("Digite o grau do polinômio a ser ajustado: "))

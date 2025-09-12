@@ -5,6 +5,7 @@ init_printing(use_latex='png', scale=1.05, order='grlex',
 
 
 x = Symbol('x')
+e = Symbol('e')
 y = Symbol('y')
-f = x**3+x*y+x**2+y**2
-print(diff(f, x, y))
+f = 2*x**2
+print(diff(f, x))

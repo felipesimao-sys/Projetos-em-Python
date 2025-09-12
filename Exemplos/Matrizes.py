@@ -31,5 +31,5 @@ print(np.linalg.inv(matriz_b), "\n")
 #dá a transposta de uma matriz e apresenta
 print(np.transpose(matriz_a), "\n")
 
-print(matriz_a * np.linalg.inv(matriz_a))
+print(np.floor((matriz_a @ np.linalg.inv(matriz_a))))
 
