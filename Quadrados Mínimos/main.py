@@ -17,9 +17,16 @@ n = int(input("Digite o grau do polinômio a ser ajustado: "))
 coeficientes = funcao_quadrados_minimos(x, y, n)
 
 # imprime os coeficientes do polinômio ajustado
-print("Coeficientes do polinômio ajustado:", coeficientes)
+print("\n\nCoeficientes do polinômio ajustado: \n", coeficientes)
+
+# imprime o polinômio ajustado
+print("\n\nPolinômio ajustado: ")
+for i in range(len(coeficientes)):
+    print(f"{coeficientes[i]:.4f}x^{n-i}", end="")
+    if i < len(coeficientes) - 1:
+        print(" + ", end="")
 
 # chama a função para gerar o gráfico do polinômio ajustado e dos pontos originais
 gerar_grafico(x, y, coeficientes, n)
 
-print("Fim")
+print("\n\nFim")
