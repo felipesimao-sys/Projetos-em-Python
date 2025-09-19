@@ -19,6 +19,17 @@ def gerar_grafico(x, y, coeficientes, n):
 
     # Cria o gráfico
     plt.plot(x_grafico, y_grafico, label='Polinômio Ajustado', color='blue')
+
+    coef2 = [-0.05406431, -0.43426316, 9.76603175]
+
+    for i in range(len(coef2)):
+        if i == 0:
+            y_grafico2 = coef2[i] * (x_grafico ** (n-i))
+        else:
+            y_grafico2 += coef2[i] * (x_grafico ** (n-i))
+
+    # Cria o gráfico
+    plt.plot(x_grafico, y_grafico2, label='Polinômio zuado', color='orange')
     plt.scatter(x, y, color='red', label='Pontos Originais')
 
     # Adiciona título e rótulos aos eixos
